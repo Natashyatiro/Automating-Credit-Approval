@@ -3,6 +3,7 @@
 *	Optimized and compared Linear Regression, Decision Tree, Random Forest, GBoost, MLP Regressor, CNN, Random Forest Regressor Optimization to predict loan amount and to reach the best model using Python and Orange.
 *	Optimized and compared Logistic Regression, Decision Tree, Random Forest, GBoost, MLP Classifier, CNN (Keras Sequential) with Keras Tuner to predict loan amount and to reach the best model using Python and Orange.
 *	The best model performance is by Regressor Optimization for Random Forest with 2456.62 RMSE in loan amount prediction, and Gradient Boosting with 85.88% accuracy in default prediction.
+* Built a client facing API using flask which can be accessed in this [Application Page](https://dashboard.heroku.com/apps/credit-approval-natashya/deploy/github).
 
 ## Background
 In credit card approval process, loan eligibility is important to be checked because it helps to make sure that borrowers will be able to repay their loans. There are two crucial steps that can determine the credit card application decision. The first is determining the amount of loan, and the second is predicting whether the applicant will default or not. These are time-consuming and complicated task to do manually because bank employees must consider many different factors including the background of the applicants and income carefully. This often causes struggle for bank employees to decide on approval of low-risk loans accurately and in a timely manner. Other than that, if the bank approved risky loans due to human error, and the applicant turns out to default, bank will have higher risk of losing money. Therefore, the solution to improve credit card approval reliability and accuracy and make the process much more efficient is by automating these tasks using machine learning model. Machine learning can be used to automate the decision-making process for loan amount and predict whether applicant will default by using data from previous loan applications.
@@ -39,6 +40,21 @@ The study also used basic approach models to see whether there is improvement in
 
 ## Conclusion
 To solve the business problem that bank is facing which is regarding the manual process of credit card approval that is too complicated, time-consuming, and sometimes inaccurate and unreliable, this study developed several machine learning models. The best model performance is by Regressor Optimization for Random Forest with 2456.62 RMSE in loan amount prediction, and Gradient Boosting with 85.88% accuracy in default prediction. With such a high accuracy machine learning and the right implementation plan at the bank, bank can increase employee’s productivity, reduce labour cost, and reduce card approval time which also is beneficial for applicants. On top of that, with high approval accuracy and reliability, bank can reduce credit default rate and eventually reduce risk of financial loss. Overall, bank would be tremendously benefitted by utilizing machine learning in loan approval process.
+
+## Productionization
+In this step, I built a flask API endpoint that was hosted on a local webserver. The API endpoint takes in a request value of customer’s age, income and returns loan amount as well as predicts whether or not the customer will default.
+
+## Code and Resources Used
+**Python Version:** 3.8.8
+
+**Packages:** pandas, seaborn, matplotlib, sklearn, scipy, imblearn, keras, os, joblib, flask
+
+**Orange Version:** 3.32
+
+**For Web Framework Requirements:** pip install -r requirements.txt
+
+**Flask Productionization:** https://towardsdatascience.com/productionize-a-machine-learning-model-with-flask-and-heroku-8201260503d2
+
 
 
 
