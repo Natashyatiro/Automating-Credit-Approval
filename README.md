@@ -17,6 +17,7 @@ The dataset used consists of 4 columns, they are income (float), age (float), lo
 ![image](https://user-images.githubusercontent.com/84263856/201728610-41764c34-6228-40a9-8fdd-434380a4c5f2.png)
 
 To understand the data better, the variables are visualized in different plots. As shown in Figure 2, default applicants are under 40 years old, and the highest probability of default is applicants in their 20 to 30 years old.   As shown in Figure 3, there is a clear pattern on the loan amount above 4000, which is the higher the loan amount, the higher the income applicants (show positive correlation). 
+
 ![image](https://user-images.githubusercontent.com/84263856/201728680-da9ecefc-3f27-4e93-a08d-34ae8822cffc.png)
 ![image](https://user-images.githubusercontent.com/84263856/201728689-29d36876-e31c-444f-8817-88e646a4622d.png)
 
